@@ -1,0 +1,20 @@
+{
+  "name": "timdouglas-nginx",
+  "version": "1.0.0",
+  "description": "nginx reverse proxy layer",
+  "main": "index.js",
+  "scripts": {
+    "docker-build": "./build.sh",
+    "docker-run": "./run.sh",
+    "docker-restart": "docker stop timdouglas-nginx && docker rm -v timdouglas-nginx && npm run docker-build && npm run docker-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/neurotech/timdouglas-nginx"
+  },
+  "private": true,
+  "author": "Tim Douglas",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {}
+}
