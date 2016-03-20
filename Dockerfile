@@ -5,3 +5,4 @@ RUN echo "Australia/Sydney" > /etc/timezone
 ENV TZ="Australia/Sydney"
 
 RUN mkdir -p /usr/share/nginx/html/timdouglas.co
+USER nobody

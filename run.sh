@@ -2,7 +2,7 @@
 
 echo "Starting container: timdouglas-nginx"
 docker run -d \
-  -p 80:80 \
+  -p 80:8080 \
   --name timdouglas-nginx \
   --log-driver=json-file \
   --log-opt max-size=50m \
